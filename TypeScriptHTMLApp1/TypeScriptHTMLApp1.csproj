@@ -27,6 +27,7 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\AnotherComponent.ts" />
     <TypeScriptCompile Include="app\app.ts" />
     <TypeScriptCompile Include="app\TestComponent.ts" />
     <TypeScriptCompile Include="framework\Component.ts" />

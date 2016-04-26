@@ -5,12 +5,12 @@ var Template = (function () {
         this.html = html;
         var self = this;
         HtmlTranspiler.replaceHashes(this.html, this.scope, function (transpiledHtml) {
-            document.querySelector(self.element).innerHTML = transpiledHtml;
+            var allElements = document.querySelectorAll(self.element);
+            for (var i = 0; i < allElements.length; i++) {
+                allElements[i].innerHTML = transpiledHtml;
+            }
         });
     }
-    Template.prototype.draw = function () {
-        document.querySelector(this.element).innerHTML = this.html;
-    };
     return Template;
 }());
 //# sourceMappingURL=Template.js.map
