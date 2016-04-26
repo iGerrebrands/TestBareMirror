@@ -1,7 +1,9 @@
 ﻿class AnotherComponent extends Component {
 
-    static html: string = `<ul>
-        <li><span>$listItem.id$</span>&nbsp;<span>$listItem.title$</span></li>
+    static html: string = `
+    <h2>Another Component</h2>    
+    <ul>
+        <li><span>$listItem.id$</span><span>$listItem.title$</span></li>
     </ul>`;
 
     constructor() {

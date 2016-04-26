@@ -7,10 +7,10 @@ var TestComponent = (function (_super) {
     __extends(TestComponent, _super);
     function TestComponent() {
         var scope = new Scope({});
-        scope.$.user = { name: 'Ian', age: 23 };
+        scope.$.user = { name: 'Ian', age: 23, gender: 'Male' };
         _super.call(this, ".test-component", TestComponent.html, scope);
     }
-    TestComponent.html = "<h3>Name: $user.name$, Age: $user.age$</h3>";
+    TestComponent.html = "\n    <h2>Test Component</h2>\n    <h3>Name: $user.name$, Age: $user.age$, Gender: $user.gender$</h3>";
     return TestComponent;
 }(Component));
 //# sourceMappingURL=TestComponent.js.map

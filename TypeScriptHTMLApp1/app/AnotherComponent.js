@@ -10,7 +10,7 @@ var AnotherComponent = (function (_super) {
         scope.$.listItem = { id: 1, title: 'Some List Item' };
         _super.call(this, ".another-component", AnotherComponent.html, scope);
     }
-    AnotherComponent.html = "<ul>\n        <li><span>$listItem.id$</span>&nbsp;<span>$listItem.title$</span></li>\n    </ul>";
+    AnotherComponent.html = "\n    <h2>Another Component</h2>    \n    <ul>\n        <li><span>$listItem.id$</span><span>$listItem.title$</span></li>\n    </ul>";
     return AnotherComponent;
 }(Component));
 //# sourceMappingURL=AnotherComponent.js.map
